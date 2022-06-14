@@ -1,0 +1,77 @@
+body {
+  font: icon;
+  margin: 1em auto;
+  width: 20em;
+}
+
+.item {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 1ex;
+  padding: .5ex 1ex;
+}
+
+.item.alt {
+  background: whitesmoke;
+}
+
+.item:hover {
+  background: gray;
+  color: white;
+}
+
+.item span {
+  padding: .25ex .5ex;
+}
+
+.item:hover span {
+  background: white;
+}
+
+.section {
+  color: gray;
+  display: flex;
+  gap: 1ex;
+}
+
+.section:not(:first-of-type) {
+  padding: 2em 1ex 1ex;
+}
+
+.section::before {
+  background: linear-gradient(0deg, transparent 50%, silver calc(50% + 1px), transparent 0);
+  content: '';
+  display: inline;
+  flex: 1;
+}
+
+.section::after {
+  background: linear-gradient(0deg, transparent 50%, silver calc(50% + 1px), transparent 0);
+  content: '';
+  display: inline;
+  flex: 1;
+}
+
+.group {
+  display: flex;
+}
+
+.groupLabel {
+  color: silver;
+  padding: .25ex 1em .25ex 0;
+  width: 1ex;
+}
+
+.groupLabelText {
+  aspect-ratio: 1;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  transform: rotate(-90deg);
+}
+
+.groupItems {
+  flex: 1;
+}
