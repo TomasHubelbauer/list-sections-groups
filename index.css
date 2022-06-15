@@ -59,6 +59,7 @@ body {
 
 .groupLabel {
   color: silver;
+  overflow: hidden;
   padding: .25ex 1em .25ex 0;
   width: 1ex;
 }
