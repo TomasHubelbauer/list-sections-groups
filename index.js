@@ -51,8 +51,13 @@ for (const item of items) {
 
       const textDiv = document.createElement('div');
       textDiv.className = 'groupLabelText';
-      textDiv.textContent = group;
       textDiv.title = group;
+
+      const textSpan = document.createElement('span');
+      textSpan.className = 'groupLabelTextSpan';
+      textSpan.textContent = group;
+      textDiv.append(textSpan);
+
       labelDiv.append(textDiv);
 
       groupDiv = document.createElement('div');

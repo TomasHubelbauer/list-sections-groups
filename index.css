@@ -66,11 +66,17 @@ body {
 
 .groupLabelText {
   aspect-ratio: 1;
+  background: linear-gradient(to bottom, transparent, transparent 1ex, silver 0, silver calc(1ex + 1px), transparent 0);
   height: 100%;
   overflow: hidden;
   text-align: center;
   text-overflow: ellipsis;
   transform: rotate(-90deg);
+}
+
+.groupLabelTextSpan {
+  background: white;
+  padding: 0 .5ex;
 }
 
 .groupItems {
